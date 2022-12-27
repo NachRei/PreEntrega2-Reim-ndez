@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
     <header class="nav">
@@ -44,102 +45,123 @@
             </ul>   
         </nav>
     </header>
-    <!--
     <main class="main-index">
         <section class="slider">
-            <div class="slider-container">
-                <img class="slider-img" src="./assets/img/slider1.jpg" alt="Imagen de Óptica">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/img/slider1.jpg" class="d-block w-100" alt="slider">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/slider2.jpg" class="d-block w-100" alt="slider1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/slider3.jpg" class="d-block w-100" alt="slider2">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
-        <section class="main-glasses">
-            <div class="glasses">
-                <h2 class="glasses-title">Lentes de Receta</h2>
+        <section class="main-glasses mt-5">
+            <div class="glasses m-0 row justify-content-center align-items-center">
+                <h2 class="glasses-title col-8 text-center">Lentes de Receta</h2>    
             </div>
-            <div class="card">
-                <img class="card-img" src="./assets/img/receta1.jpg" alt="Lentes Receta">
-                <h3 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                <p class="card-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
-                <a href="" class="card-btn">Agregar al Carrito</a>
+            <div class="tarjeta-container mt-5 d-flex flex-row flex-wrap justify-content-center">
+                <div class="tarjeta m-3 d-flex flex-column align-items-center">
+                    <img class="tarjeta-img" src="./assets/img/receta1.jpg" alt="Lentes Receta">
+                    <h3 class="tarjeta-title text-center ms-1 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p class="tarjeta-desc text-center ms-1 me-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
+                    <button type="button" class="btn btn-primary text-center mb-2 ms-2">Agregar al Carrito</button>
+                </div>
+                <div class="tarjeta m-3 d-flex flex-column align-items-center">
+                    <img class="tarjeta-img" src="./assets/img/receta2.jpg" alt="Lentes Receta">
+                    <h3 class="tarjeta-title text-center ms-1 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p class="tarjeta-desc text-center ms-1 me-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
+                    <button type="button" class="btn btn-primary text-center mb-2 ms-2">Agregar al Carrito</button>
+                </div>
+                <div class="tarjeta m-3 d-flex flex-column align-items-center">
+                    <img class="tarjeta-img" src="./assets/img/receta3.jpg" alt="Lentes Receta">
+                    <h3 class="tarjeta-title text-center ms-1 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p class="tarjeta-desc text-center ms-1 me-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
+                    <button type="button" class="btn btn-primary text-center mb-2 ms-2">Agregar al Carrito</button>
+                </div>
+                <div class="tarjeta m-3 d-flex flex-column align-items-center">
+                    <img class="tarjeta-img" src="./assets/img/receta4.jpg" alt="Lentes Receta">
+                    <h3 class="tarjeta-title text-center ms-1 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p class="tarjeta-desc text-center ms-1 me-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
+                    <button type="button" class="btn btn-primary text-center mb-2 ms-2">Agregar al Carrito</button>
+                </div>
+            </div>    
+        </section>
+        <section class="main-sunglasses mt-5">
+            <div class="sunglasses m-0 row justify-content-center align-items-center">
+                <h2 class="sunglasses-title col-8 text-center">Lentes de Sol</h2>    
             </div>
-            <div class="card">
-                <img class="card-img" src="./assets/img/receta2.jpg" alt="Lentes Receta">
-                <h3 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                <p class="card-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
-                <a href="" class="card-btn">Agregar al Carrito</a>
+            <div class="tarjeta-container mt-5 d-flex flex-row flex-wrap justify-content-center">
+                <div class="tarjeta m-3 d-flex flex-column align-items-center">
+                    <img class="tarjeta-img" src="./assets/img/sol1.jpg" alt="Lentes Sol">
+                    <h3 class="tarjeta-title text-center ms-1 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p class="tarjeta-desc text-center ms-1 me-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
+                    <button type="button" class="btn btn-primary text-center mb-2 ms-2">Agregar al Carrito</button>
+                </div>
+                <div class="tarjeta m-3 d-flex flex-column align-items-center">
+                    <img class="tarjeta-img" src="./assets/img/sol2.jpg" alt="Lentes Sol">
+                    <h3 class="tarjeta-title text-center ms-1 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p class="tarjeta-desc text-center ms-1 me-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
+                    <button type="button" class="btn btn-primary text-center mb-2 ms-2">Agregar al Carrito</button>
+                </div>
+                <div class="tarjeta m-3 d-flex flex-column align-items-center">
+                    <img class="tarjeta-img" src="./assets/img/sol3.jpg" alt="Lentes Sol">
+                    <h3 class="tarjeta-title text-center ms-1 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p class="tarjeta-desc text-center ms-1 me-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
+                    <button type="button" class="btn btn-primary text-center mb-2 ms-2">Agregar al Carrito</button>
+                </div>
+                <div class="tarjeta m-3 d-flex flex-column align-items-center">
+                    <img class="tarjeta-img" src="./assets/img/sol4.jpg" alt="Lentes Sol">
+                    <h3 class="tarjeta-title text-center ms-1 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p class="tarjeta-desc text-center ms-1 me-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
+                    <button type="button" class="btn btn-primary text-center mb-2 ms-2">Agregar al Carrito</button>
+                </div>
+        </section>
+        <section class="main-contact-lenses mt-5">
+            <div class="contact-lenses m-0 row justify-content-center align-items-center">
+                <h2 class="contact-lenses-title col-8 text-center">Lentes de Contacto</h2>    
             </div>
-            <div class="card">
-                <img class="card-img" src="./assets/img/receta3.jpg" alt="Lentes Receta">
-                <h3 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                <p class="card-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
-                <a href="" class="card-btn">Agregar al Carrito</a>
-            </div>
-            <div class="card">
-                <img class="card-img" src="./assets/img/receta4.jpg" alt="Lentes Receta">
-                <h3 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                <p class="card-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
-                <a href="" class="card-btn">Agregar al Carrito</a>
-            </div>
-        </section>    
-        <section class="main-sunglasses">
-            <div class="sunglasses">
-                <h2 class="sunglasses-title">Lentes de Receta</h2>
-            </div>
-            <div class="card">
-                <img class="card-img" src="./assets/img/sol1.jpg" alt="Lentes de Sol">
-                <h3 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                <p class="card-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
-                <a href="" class="card-btn">Agregar al Carrito</a>
-            </div>
-            <div class="card">
-                <img class="card-img" src="./assets/img/sol2.jpg" alt="Lentes de Sol">
-                <h3 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                <p class="card-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
-                <a href="" class="card-btn">Agregar al Carrito</a>
-            </div>
-            <div class="card">
-                <img class="card-img" src="./assets/img/sol3.jpg" alt="Lentes de Sol">
-                <h3 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                <p class="card-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
-                <a href="" class="card-btn">Agregar al Carrito</a>
-            </div>
-            <div class="card">
-                <img class="card-img" src="./assets/img/sol4.jpg" alt="Lentes de Sol">
-                <h3 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                <p class="card-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
-                <a href="" class="card-btn">Agregar al Carrito</a>
+            <div class="tarjeta-container mt-5 mb-5 d-flex flex-row flex-wrap justify-content-center">
+                <div class="tarjeta m-3 d-flex flex-column align-items-center">
+                    <img class="tarjeta-img" src="./assets/img/receta1.jpg" alt="Lentes Contacto">
+                    <h3 class="tarjeta-title text-center ms-1 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p class="tarjeta-desc text-center ms-1 me-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
+                    <button type="button" class="btn btn-primary text-center mb-2 ms-2">Agregar al Carrito</button>
+                </div>
+                <div class="tarjeta m-3 d-flex flex-column align-items-center">
+                    <img class="tarjeta-img" src="./assets/img/receta2.jpg" alt="Lentes Contacto">
+                    <h3 class="tarjeta-title text-center ms-1 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p class="tarjeta-desc text-center ms-1 me-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
+                    <button type="button" class="btn btn-primary text-center mb-2 ms-2">Agregar al Carrito</button>
+                </div>
+                <div class="tarjeta m-3 d-flex flex-column align-items-center">
+                    <img class="tarjeta-img" src="./assets/img/receta3.jpg" alt="Lentes Contacto">
+                    <h3 class="tarjeta-title text-center ms-1 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p class="tarjeta-desc text-center ms-1 me-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
+                    <button type="button" class="btn btn-primary text-center mb-2 ms-2">Agregar al Carrito</button>
+                </div>
+                <div class="tarjeta m-3 d-flex flex-column align-items-center">
+                    <img class="tarjeta-img" src="./assets/img/receta4.jpg" alt="Lentes Contacto">
+                    <h3 class="tarjeta-title text-center ms-1 me-1">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p class="tarjeta-desc text-center ms-1 me-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
+                    <button type="button" class="btn btn-primary text-center mb-2 ms-2">Agregar al Carrito</button>
+                </div>
             </div>
         </section>
-        <section class="main-contactlenses">
-            <div class="contactlenses">
-                <h2 class="contactlenses-title">Lentes de Receta</h2>
-            </div>
-            <div class="card">
-                <img class="card-img" src="./assets/contacto1.jpg" alt="Lentes de Cotnacto">
-                <h3 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                <p class="card-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
-                <a href="" class="card-btn">Agregar al Carrito</a>
-            </div>
-            <div class="card">
-                <img class="card-img" src="./assets/img/contacto2.jpg" alt="Lentes de Contacto">
-                <h3 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                <p class="card-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
-                <a href="" class="card-btn">Agregar al Carrito</a>
-            </div>
-            <div class="card">
-                <img class="card-img" src="./assets/img/contacto3.jpg" alt="Lentes de Contacto">
-                <h3 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                <p class="card-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
-                <a href="" class="card-btn">Agregar al Carrito</a>
-            </div>
-            <div class="card">
-                <img class="card-img" src="./assets/img/contacto4.jpg" alt="Lentes de Contacto">
-                <h3 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-                <p class="card-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt ea vero cupiditate, facere consectetur saepe.</p>
-                <a href="" class="card-btn">Agregar al Carrito</a>
-            </div>
-        </section>    
     </main>
--->
     <footer class="foot">
         <div class="info">
             <p class="info-tel">Tel: 2XXXXXXX - Cel: 09XXXXXXX</p>
@@ -158,5 +180,6 @@
             <button class="sub-btn">Suscribirse</button>    
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
