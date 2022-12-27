@@ -382,3 +382,22 @@
     }
 }
 /*------Fin-Index-------*/
+
+/*---Lentes-Accesorios---*/
+
+.page-title {
+    font-size: 45px;
+    font-family: 'Lora', serif;
+}
+
+/*--Fin-Lentes-Accesorios--*/
+
+/*---Quienes-Somos---*/
+
+.main-quienes-somos h2 {
+    margin: 48px;
+    font-size: 45px;
+    font-family: 'Lora', serif;
+}
+
+/*--Fin-Quines-Somos--*/
