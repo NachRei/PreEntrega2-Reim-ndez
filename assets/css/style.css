@@ -537,6 +537,9 @@
     grid-area: marca4;
 }
 
+.video {
+    z-index: -1000;
+}
 @media (max-width:1200px){
 
     .main-marcas {
