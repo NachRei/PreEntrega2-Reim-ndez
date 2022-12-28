@@ -508,15 +508,6 @@
     justify-self: start;
 }
 
-.marca1-title , .marca2-title , .marca3-title , .marca4-title {
-    font-size: 30px;
-    font-weight: bolder;
-    font-family: serif;
-    font-style: italic;
-    text-align: center;
-    margin: 10px;
-}
-
 .marca1-img , .marca2-img , .marca3-img, .marca4-img {
     width: 200px;
     height: 140px;
@@ -544,6 +535,46 @@
 
 .marca4 {
     grid-area: marca4;
+}
+
+@media (max-width:1200px){
+
+    .main-marcas {
+        grid-template-columns: 1fr;
+        grid-template-rows: 90px 650px 650px 650px 650px;
+        grid-template-areas:    "title"
+                                "marca1"  
+                                "marca2"
+                                "marca3"
+                                "marca4";
+    }
+    
+}
+
+@media (max-width:768px) {
+
+    .main-marcas {
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 400px 400px 400px 400px;
+        grid-template-areas:    "title"
+                                "marca1"  
+                                "marca2"
+                                "marca3"
+                                "marca4";
+    }
+    
+    .title-marcas {
+        font-size: 30px;
+    }
+    
+    .video {
+        position: relative;
+    }
+    
+    .video iframe {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /*-----Fin-Marcas-----*/
