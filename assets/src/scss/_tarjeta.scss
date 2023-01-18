@@ -44,20 +44,20 @@
             }
         }
     }
-}
+    @media (max-width:1300px) {
 
-@media (max-width:1300px) {
-
-    .tarjeta{
-        margin: 20px 80px;
-    }
-
-}
-
-@media (max-width:500px) {
-
-    .tarjeta{
-        margin: 20px 10px;
+        .tarjeta{
+            margin: 20px 80px;
+        }
+    
     }
     
+    @media (max-width:500px) {
+    
+        .tarjeta{
+            margin: 20px 10px;
+        }
+        
+    }
 }
+
