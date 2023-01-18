@@ -30,18 +30,8 @@
             object-fit: cover; 
         }
         .tarjeta-btn{
-            margin-bottom: 10px;
-            border-radius: 10px;
             padding: 7px;
-            border: 2px solid $colorBorde;
-            background-color: $colorBotonIndex;
-            color: $colorFondoTarjetas;
-            font-style: bold;
-            font-family:$fuentePrincipal;
-            &:hover {
-                background-color: $colorPrincipal;
-                border: 2px solid $colorPrincipal;
-            }
+            @include button($colorBotonIndex,$colorFondoTarjetas,$colorPrincipal,$colorPrincipal);
         }
     }
     @media (max-width:1300px) {

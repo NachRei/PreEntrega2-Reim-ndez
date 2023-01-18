@@ -320,9 +320,9 @@
   object-fit: cover;
 }
 .tarjeta-container .tarjeta .tarjeta-btn {
+  padding: 7px;
   margin-bottom: 10px;
   border-radius: 10px;
-  padding: 7px;
   border: 2px solid #000;
   background-color: #045aa0;
   color: #fff;
@@ -384,11 +384,11 @@
   margin: 0;
 }
 .grilla .tarjeta-lentes .tarjeta-lentes-btn {
-  margin-bottom: 10px;
-  border-radius: 10px;
   margin: 3px;
   padding: 8px 40px;
   margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
   border: 2px solid #000;
   background-color: #0D6EFD;
   color: #fff;

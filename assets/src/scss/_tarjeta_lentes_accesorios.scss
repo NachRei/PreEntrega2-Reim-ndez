@@ -36,20 +36,10 @@
             margin:0;
             }
         .tarjeta-lentes-btn{
-            margin-bottom: 10px;
-            border-radius: 10px;
             margin: 3px;
             padding: 8px 40px;
             margin-top: 10px;
-            border: 2px solid $colorBorde;
-            background-color: $colorBotonComprar;
-            color: $colorFondoTarjetas;
-            font-style: bold;
-            font-family:$fuentePrincipal;
-            &:hover {
-                background-color: $colorBotonIndex;
-                border: 2px solid $colorBotonIndex;
-            }
+            @include button($colorBotonComprar,$colorFondoTarjetas,$colorBotonIndex,$colorBotonIndex);
         }
     }
 }
