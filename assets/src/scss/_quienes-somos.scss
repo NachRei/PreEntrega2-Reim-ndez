@@ -1,5 +1,5 @@
 .quienes-somos{
-    background-color: rgba(10, 34, 138, 0.425);
+    background-color: $colorFondo;
     .container-img , .container-img1 {
         width: 450px;
         height: 300px;
@@ -21,7 +21,7 @@
             justify-self: start;
             margin-left: 20px;
             font-size: 45px;
-            font-family: 'Lora', serif;
+            font-family:$fuentePrincipal;
         }
         .container-img, .container-img1 {
             align-self: center;
@@ -61,7 +61,7 @@
                                     "text2";
             .page-title-quienes-somos {
                 font-size: 40px;
-                font-family: 'Lora', serif;
+                font-family: $fuentePrincipal;
             }
             .container-desc1 , .container-desc {
                 padding: 20px;

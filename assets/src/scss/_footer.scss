@@ -5,14 +5,14 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 10px;
-    background-color: #1c285e;
-    color: #ffffff;
-    font-family: 'Lora', serif;
+    background-color: $colorPrincipal;
+    color: $colorFondoTarjetas;
+    font-family: $fuentePrincipal;
     font-size: 15px;
     .legal {
         a {
             text-decoration: none;
-            color: #ffffff;
+            color: $colorFondoTarjetas;
         }
         p {
             padding: 4px;
@@ -25,17 +25,17 @@
         .sub-input {
             padding: 5px;
             border-radius: 10px;
-            border: 2px solid #000000;
+            border: 2px solid $colorBorde;
         }
         .sub-btn {
             color: #ffffff;
-            background-color: #ff0000;
+            background-color: $colorPrimarioSuscribirse;
             padding: 5px 10px;
             border-radius: 10px;
-            border: 2px solid #ff0000;
+            border: 2px solid $colorPrimarioSuscribirse;
             &:hover {
-                background-color: #920000;
-                border: 2px solid #920000;
+                background-color: $colorSecundarioSuscribirse;
+                border: 2px solid $colorSecundarioSuscribirse;
             }
         }
     }

@@ -1,5 +1,5 @@
 .marcas {
-    background-color: rgba(10, 34, 138, 0.425);
+    background-color: $colorFondo;
     .main-marcas {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -13,7 +13,7 @@
     .title-marcas {
         grid-area: title;
         font-size: 45px;
-        font-family: 'Lora', serif;
+        font-family: $fuentePrincipal;
         padding: 10px;
         margin: 10px;
         justify-self: start;

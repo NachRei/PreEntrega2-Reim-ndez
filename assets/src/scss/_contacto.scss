@@ -1,10 +1,10 @@
 
 .contact{
-    background-color: rgba(10, 34, 138, 0.425);
+    background-color: $colorFondo;
     .title-contacto {
         font-size: 45px;
         margin: 20px;
-        font-family: 'Lora', serif;
+        font-family: $fuentePrincipal;
     }
     .main-contacto {
         display: flex;
@@ -32,14 +32,14 @@
                     .control-form1 {
                         width: 100%;
                         height: 30px;
-                        border: 2px solid #181449;
+                        border: 2px solid $colorBorde;
                         border-radius: 5px;
                         margin: 10px 0px;
                     }
                     .control-form2 {
                         width: 100%;
                         height: 100px;
-                        border: 2px solid #181449;
+                        border: 2px solid $colorBorde;
                         border-radius: 5px;
                         margin: 10px 0px;
                     }
@@ -49,9 +49,14 @@
                     height: 30px;
                     border-radius: 5px;
                     margin: 10px 0px;
-                    border: 2px solid #181449;
+                    background-color: $colorBotonIndex;
+                    border: 2px solid $colorBorde;
                     font-family: serif;
                     font-size: 17px;
+                    color: $colorFondoTarjetas;
+                    &:hover{
+                        background-color: $colorBotonSecundarioIndex;
+                    }
                 }
             }
         }

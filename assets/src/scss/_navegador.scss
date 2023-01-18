@@ -3,7 +3,7 @@
     flex-direction: column;
     a {
         text-decoration: none;
-        color: #ffffff;
+        color: $colorFondoTarjetas;
     }
     .nav1 {
         width: 100%;
@@ -12,7 +12,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        background-color: #1c285e;
+        background-color: $colorBotonSecundarioIndex;
         .nav-logo {
             padding: 10px 10px;
             border-radius: 10px;
@@ -25,7 +25,7 @@
         }
         .nav-title {
             font-size: 50px;
-            font-family: 'Lora', serif;
+            font-family: $fuentePrincipal;
             font-style: italic;
         }
         .nav-icons {
@@ -37,8 +37,8 @@
         }
     }
     .navegador {
-        background-color: #1c285e;
-        font-family: 'Lora', serif;
+        background-color: $colorBotonSecundarioIndex;
+        font-family: $fuentePrincipal;
         font-style: bold;
         display: flex;
         flex-direction: row;
@@ -48,14 +48,14 @@
                 display: inline-block;
                 > ul {
                     display: none;
-                    background-color: #1c285e;
+                    background-color: $colorBotonSecundarioIndex;
                     list-style: none;
                 }
                 a {
                     display: block;
                     padding: 20px 20px;
                     text-decoration: none;
-                    color: white;
+                    color: $colorFondoTarjetas;
                     font-size: 18px;
                 }
                 &:hover ul {
@@ -108,8 +108,8 @@
     
         #menu {
             display: block;
-            color: #ffffff;
-            background-color: #1c285e;
+            color: $colorFondoTarjetas;
+            background-color: $colorBotonSecundarioIndex;
             font-size: 25px;
             font-weight: bold;
             padding: 10px;

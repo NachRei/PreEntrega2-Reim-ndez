@@ -1,5 +1,5 @@
 .index {
-    background-color: rgba(10, 34, 138, 0.425);
+    background-color: $colorFondo;
     .carousel-item {
         z-index: -1000000;
     }
@@ -43,13 +43,13 @@
     
     .glasses-title , .sunglasses-title , .contact-lenses-title {
         font-size: 40px;
-        font-family: 'Lora', serif;
+        font-family: $fuentePrincipal;
         font-style: italic;
         font-weight: bold;
     }
     
     .glasses-title , .sunglasses-title , .contact-lenses-title {
-        color: #39b9ef;
+        color: $colorTituloIndex;
     }
     
     @media (min-width:500px) {
