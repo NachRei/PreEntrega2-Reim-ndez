@@ -5,21 +5,9 @@
     column-gap: 20px;
     justify-content: space-around;
     .tarjeta-lentes {
-        width: 300px;
-        height: 400px;
-        border: 2px solid $colorPrincipal;
-        background-color: $colorFondoTarjetas;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 5px 9px 11px -1px $colorSombracaja;
-        -webkit-box-shadow: 5px 9px 11px -1px $colorSombracaja;
-        -moz-box-shadow: 5px 9px 11px -1px $colorSombracaja;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
         margin: 10px;
-        transition: 1.5s;
+        border: 2px solid $colorPrincipal;
+        @extend %tarjeta;
         &:hover {
             transform: scale(1.02);
         }
